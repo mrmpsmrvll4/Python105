@@ -17,3 +17,4 @@ if age >= "21":
 #check if age is less than 65
 if age < "65":
     print("You are not eligible for a senior discount")
+    
