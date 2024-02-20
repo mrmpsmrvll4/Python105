@@ -1,5 +1,6 @@
-# make a madlib of my own choosing
+# make a madlib of my own choosing please
 
+# set the definition
 def madlibs(adjective1, verb1, adjective2, noun1, verb2, adjective3, noun2, adjective4, adjective5):
     # my adlibs
     print(f"Our School cafeteria has really {adjective1} food.")
@@ -22,4 +23,5 @@ adjective4 = input("Please input an adjective:  ")
 adjective5 = input("Please input an adjective:  ")
 
 
+# make the output
 madlibs(adjective1, verb1, adjective2, noun1, verb2, adjective3, noun2, adjective4, adjective5)
