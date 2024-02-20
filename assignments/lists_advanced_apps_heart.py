@@ -1,13 +1,13 @@
 
-# Define time slots
+# Time slots
 time_slots = ["Morning", "Midday", "Afternoon", "Evening"]
 
-# Create an empty list to store heart rate data
+# Store the heart rate data
 heart_rates = []
 
-# Loop through each time slot to record heart rate
+# Loop the time slots to record heart rate
 for slot in time_slots:
-    # Ask user to enter heart rate for the current time slot
+    # Ask to enter heart rate for the current time slot
     heart_rate_str = input(f"Enter your heart rate (in BPM) in the {slot}: ")
     
     # Convert input to an integer
