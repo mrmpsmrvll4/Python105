@@ -12,6 +12,7 @@ while True:
     # set print for when done buying a ticket
     if chosen_seat == '0':
         print("You have successfully bought your ticket")
+        break
 
     chosen_seat = int(chosen_seat)
 
