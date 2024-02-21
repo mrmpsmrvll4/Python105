@@ -1,24 +1,30 @@
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n - 1):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+# Initialize a list of names
+names = ["Bob", "Carol", "Ted", "Alice", "Anna"]
 
-# Accept five names from the user
-names = []
-for i in range(5):
-    name = input("Enter name {}: ".format(i + 1))
-    names.append(name)
+# Flag to track if a swap has occurred
+swapped = True
 
-# Sort the list using the Bubble Sort algorithm
-bubble_sort(names)
+# make all names lower case
+for i in range(0, len(names)):
+    names[i] = names[i].lower()
+
+# Continue looping until no swaps occur
+while swapped:
+    swapped = False  # Reset the flag at the start of each iteration
+    for i in range(len(names) - 1):
+
+        # Compare adjacent elements
+        if names[i] > names[i + 1]:
+            swapped = True  # A swap is needed
+
+            # Swap the elements
+            names[i], names[i + 1] = names[i + 1], names[i]
 
 # Print the sorted list
-print("Sorted names:", names)
+print(names)
 
-# Reverse the sorted list using a Python list method
+# Reverse the list
 names.reverse()
 
-# Print the final reversed list
-print("Reversed sorted names:", names)
+# Print the reversed list
+print(names)
