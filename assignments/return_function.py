@@ -1,11 +1,10 @@
 # calculate the interest
 
-def calculate_interest(Principal, Rate, Time):
-    total = principal * rate * time /100
-    return total
+def calculate_interest(Principal_Amount, Interest_Rate, Investment_Time):
+    result = Principal_Amount * Interest_Rate * Investment_Time /100
+    print(result)
 
-def main():
-    result = calculate_interest(principal * rate * time / 100)
-    print(f"The simple interest for a principal amount of ${principal_amount:,.2f} \
-                at an interest rate of {interest_rate}% over a period of \
-                {investment_time} years is: ${calculated_interest:,.2f}")
+result = calculate_interest(1000, 5, 2)
+print(f"The simple interest for a principal amount of ${Principal_Amount:,.2f} \
+        at an interest rate of {Interest_Rate}% over a period of \
+            {Investment_Time} years is: ${calculate_interest:,.2f}")
