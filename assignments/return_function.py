@@ -8,3 +8,5 @@ result = calculate_interest(1000, 5, 2)
 print(f"The simple interest for a principal amount of ${Principal_Amount:,.2f} \
         at an interest rate of {Interest_Rate}% over a period of \
             {Investment_Time} years is: ${calculate_interest:,.2f}")
+
+#fix so that an answer shows up
