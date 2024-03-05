@@ -1,2 +1,2 @@
-# createa a program using scope
+# createa a bmi calculator using scope
 
