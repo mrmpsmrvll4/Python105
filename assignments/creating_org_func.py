@@ -6,6 +6,7 @@ def factorial(base):
     elif base > 1:
         return base * factorial(base - 1)
 
+# set main def
 
 def main():
     base = int(input("Enter the number: "))
