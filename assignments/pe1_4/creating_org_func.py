@@ -1,7 +1,7 @@
 #Calculating Factorials
 
 def factorial(base):
-    if base >= 1:
+    if base == 1:
         return base
     elif base > 1:
         return base * factorial(base - 1)
@@ -10,8 +10,8 @@ def factorial(base):
 
 def main():
     base = int(input("Enter the number: "))
-    total_amount = factorial
-    print(f"The factorial of {base} is:  ")
+    total_amount = factorial(base)
+    print(f"The factorial of {base} is: {total_amount} ")
 
 
 main()
