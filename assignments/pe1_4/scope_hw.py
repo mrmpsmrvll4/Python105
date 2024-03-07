@@ -12,9 +12,13 @@ def calculate_bmi(weight, height):
 def main():
     for i in weight:
         input int(f"Please enter your {weight} in pounds:  ")
+    else:
+        print()
     
-    
+    for h in height:
         input int(f"Please enter your {height} in inches:  ")
+    else:
+        print()
 
     
         print(f"Your BMI is{()} ")

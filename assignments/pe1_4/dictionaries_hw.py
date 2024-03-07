@@ -6,6 +6,7 @@ def main():
                "u":"uniform", "v":"victor", "w":"whiskey", "x":"xray", "y":"yankee", "z":"zulu", " ":" "}
 
     word = input("Enter word: ")
+    
 
     
 

@@ -13,6 +13,6 @@ def square_number():
         print("Thank you for using the square program.")
     
     finally:
-        print("Program has ended")
+        print("Program ended")
 
 square_number()
