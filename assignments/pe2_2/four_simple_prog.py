@@ -17,7 +17,6 @@ If the second password entry matches the first, display a success message. Other
 def main():
     valid = False  # change to true if all condions are met
     while not valid:
-        valid = True  # we will change to false if ANY requirement not met
         print("""Password Requirements:\n
             Between 8 to 20 characters long.\n
             Contains at least one uppercase letter.\n
@@ -27,52 +26,69 @@ def main():
 
         password = input("Please enter a password that meets the criteria: ")
         length = len(password)
-        if 7 < length < 21:
-            continue
+
+        if length < 21 and length > 7:
+            valid = True
         else:
             valid = False
-            print("That password is not the right length")
 
-        is_upper = False
-        upper = 
-        if:
-        else:
-        # change to true if found
-        # for loop stepping through characters in password. Look for an upper case.
 
-            # continue (add this once figuring out upper and lower)
-        
-        is_lower = False
-        lower = 
-        if:
-        else:
-        # change to true if found
-        # for loop stepping through characters in password. Look for an upper case.
+            # check if password has a capital
 
-            # continue (add this once figuring out upper and lower)
-        
-        is_num = False
-        num = 
-        if:
-        else:
-        # change to true if found
-        # for loop stepping through characters in password. Look for an upper case.
+        for letter in password:
 
-            # continue (add this once figuring out upper and lower)
+            if letter.isupper():
+                valid = True
+
+            else:
+                valid = False 
+
+
+        #check if letter has lowercase
+                
+        for letter in password:
+
+            if letter.islower():
+                valid = True
+            else:
+                valid = False
+
+
+        # check if password has a number
+                
+        for letter in password:
+            
+            if letter.isnumeric():
+                valid = True
+            else:
+                valid = False
+
+
+        # check if password has a symbol
 
         has_symbol = False
         symbol = ['!', '@', '#']
-        for s in symbol:
-            for c in password:
-                if s == c:
-                    has_symbol == True
-        if has_symbol == False:
+       
+        for letter in password:
+
+            if letter in symbol:
+                has_symbol = True
+                valid = True
+                
+            else:
+                valid = False
+
+        
+        # 
+                
+        if valid:
+            print("You have successfully created a password!")
+        else:
+            print("That password is not the right length")
+            print("That password does not have a capital")
+            print("That password does not have a lower case")
+            print("That password does not have a number")
             print("you need to include a symbol")
-            valid = False
             continue
-
-        
-        
-
 
 main()
