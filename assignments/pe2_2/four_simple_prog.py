@@ -1,3 +1,5 @@
+# directions
+
 """
 Set up your program in a main() function
 Create a Python program that asks the user to input a password.
@@ -27,13 +29,15 @@ def main():
         password = input("Please enter a password that meets the criteria: ")
         length = len(password)
 
+        # use if else to make sure the password is between 8-20 characters
+
         if length < 21 and length > 7:
             valid = True
         else:
             valid = False
 
 
-            # check if password has a capital
+        # use for loop to ensure there is a capital letter
 
         for letter in password:
 
@@ -44,7 +48,7 @@ def main():
                 valid = False 
 
 
-        #check if letter has lowercase
+        # use for loop to ensure there is a lowercase letter in the password
                 
         for letter in password:
 
@@ -54,7 +58,7 @@ def main():
                 valid = False
 
 
-        # check if password has a number
+        # use for loop to ensure there is a number in the password
                 
         for letter in password:
             
@@ -64,10 +68,10 @@ def main():
                 valid = False
 
 
-        # check if password has a symbol
+        # use for loop to ensure there is a symbol in the password
 
         has_symbol = False
-        symbol = ['!', '@', '#']
+        symbol = ['!', '@', '#', '$', '%', '^', '&', '*']
        
         for letter in password:
 
@@ -79,7 +83,7 @@ def main():
                 valid = False
 
         
-        # 
+        # make if/else statement to print the password is correct or is missing one or more of the rules to making the password
                 
         if valid:
             print("You have successfully created a password!")
@@ -89,6 +93,8 @@ def main():
             print("That password does not have a lower case")
             print("That password does not have a number")
             print("you need to include a symbol")
+            # continue makes sure that the code runs through them all
             continue
+
 
 main()

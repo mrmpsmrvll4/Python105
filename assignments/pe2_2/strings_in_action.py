@@ -1,11 +1,14 @@
 # create a program to collect book titles from a user
 
-#add comments
+# function to count books and make a list
 
 def main():
     books = []
 
+    # index
     counter = 0
+
+    # use while loop to repeat for books until there are 10
 
     while counter <= 10:
 
@@ -18,6 +21,7 @@ def main():
     print(books)
 
 
+# make definition to add books to list and make them capitalized
     
 def addBookToList(booklist):
 
