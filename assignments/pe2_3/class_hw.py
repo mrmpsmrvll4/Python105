@@ -15,7 +15,7 @@ class Person:
         
      # Method to get student's info as a formatted string
     def get_info(self):
-        return f"{self.__name}, Address: {self.__address}, Age: {self.__age}, Phone Number: {self.__phone_number}"
+        return f"Name: {self.__name}, Address: {self.__address}, Age: {self.__age}, Phone Number: {self.__phone_number}"
 
       # Getter for name
     def get_name(self):
@@ -54,9 +54,9 @@ class Person:
 
 
 def main():
-    person1 = Person("", "", "", "")
-    person2 = Person("", "", "", "")
-    person3 = Person("", "", "", "")
+    person1 = Person("Max", "1234 Street", "27", "867-5309")
+    person2 = Person("Jax", "5678 Avenue", "28", "123-4567")
+    person3 = Person("Dax", "9999 Boulevard", "29", "987-6543")
 
     print("\n\n\n\n")
     print(person1.get_info())
@@ -64,11 +64,11 @@ def main():
     print(person3.get_info())
     print("\n\n\n\n")
 
-    person3.set_name("")
-    person3.set_address("")
-    person3.set_age("")
-    person3.set_phone_number()
-    print(person3.get_first_name())
+    person3.set_name("Quacks")
+    person3.set_address("7777 Duck Lane")
+    person3.set_age("7")
+    person3.set_phone_number("777-7777")
+    print(person3.get_info())
 
 
 main()
