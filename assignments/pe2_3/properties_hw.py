@@ -56,15 +56,22 @@ class Pet:
 # Main function to demonstrate usage of the Student class
 def main():
     # Creating an instance of Student
-    pet_owner = Pet("Max", "Somerville", '8675309', "Gertrude", "Kitty")
+    pet_owner1 = Pet("Max", "Somerville", '8675309', "William", "Cat")
+    pet_owner2 = Pet("Jax", "Jomerville", "1234567", "Quacks", "Duck")
+    pet_owner3 = Pet("Dax", "Domerville", "9876543", "Lady", "Dog")
     print("\n\n\n")
-    print(pet_owner.get_owner_first_name())
-    pet_owner.print_pet_details()
-    pet_owner.print_info()
+    print(pet_owner1.get_owner_first_name())
+    pet_owner1.print_pet_details()
+    pet_owner1.print_info()
 
     print("\n\n\n")
-    pet_owner.set_pet_name("Scratchy")
-    pet_owner.print_info()
+    pet_owner2.set_pet_name("Scratchy")
+    pet_owner2.print_info()
+
+    print("\n\n\n")
+    pet_owner3.print_info()
+
+    print("\n\n\n")
 
 # Calling the main function
 main()
