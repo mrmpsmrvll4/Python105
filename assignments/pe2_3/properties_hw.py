@@ -1,7 +1,7 @@
 # Class definition
 class Pet:
     # Class variable
-    school_name = "McHenry County College"
+    vet_name = "Pet Vet Clinic"
 
     def __init__(self, owner_first_name, owner_last_name, pet_id, pet_name, pet_type="Dog"):
         # Instance variables
@@ -63,7 +63,7 @@ def main():
     pet_owner.print_info()
 
     print("\n\n\n")
-    pet_owner.set_pet_name("Satan")
+    pet_owner.set_pet_name("Scratchy")
     pet_owner.print_info()
 
 # Calling the main function
