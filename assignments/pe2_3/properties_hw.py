@@ -118,8 +118,8 @@ def main():
     # use the check_property using hasattr()
     def check_property():
         print(hasattr(pet_owner1, "owner_first_name"))
-        print(hasattr(pet_owner2, "owner_first_name"))
-        print(hasattr(pet_owner3, "owner_first_name"))
+        print(hasattr(pet_owner2, "owner_last_name"))
+        print(hasattr(pet_owner3, "pet_name"))
 
 
 # Calling the main function
