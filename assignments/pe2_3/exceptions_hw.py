@@ -6,7 +6,9 @@ Create a custom exception class to handle a specific error scenario in a Python 
 
 Task
 ----
-Define a new exception class named InvalidInputError that inherits from the base Exception class. This exception should be raised when a user inputs an invalid value in a simple input-validation program. Your program should prompt the user to enter a number and raise the InvalidInputError if the input is not a number.
+Define a new exception class named InvalidInputError that inherits from the base Exception class.
+This exception should be raised when a user inputs an invalid value in a simple input-validation program. 
+Your program should prompt the user to enter a number and raise the InvalidInputError if the input is not a number.
 
 Requirements
 -----------

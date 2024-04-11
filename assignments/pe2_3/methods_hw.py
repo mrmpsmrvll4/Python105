@@ -31,12 +31,49 @@ Task Description:
 """
 
 # Class definition
+
 class Pet:
-    
-    def __init__(self, owner_first_name, owner_last_name, pet_id, pet_name, pet_type="Dog"):
+
+    def __init__(self, kind, breed, name):
         # Instance variables
-        self.__owner_first_name = owner_first_name
-        self.__owner_last_name = owner_last_name
-        self.__pet_id = pet_id
-        self.__pet_name = pet_name
-        self.__pet_type = pet_type
+        self.__kind = kind
+        self.__breed = breed
+        self.__name = name
+
+
+    # Setup getters
+        
+    def get_kind(self):
+        return self.__kind
+    
+    def get_breed(self):
+        return self.__breed
+    
+    def get_name(self):
+        return self.__name
+    
+    
+    # Setup setters
+
+    def set_name(self):
+        self.__kind = value
+    
+    def set_name(self):
+        self.__breed = value
+
+    def set_name(self):
+        self.__name = value
+
+
+    # Method to print pet details
+        
+    def print_details(self):
+        print("Print Details:", vars(self))
+    
+    
+    # Method to print basic info
+        
+    def print_info(self):
+        print(self.__kind)
+        print(self.__breed)
+        print(self.__name)

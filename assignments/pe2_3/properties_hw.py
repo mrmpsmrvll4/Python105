@@ -26,9 +26,6 @@ Assignment Details
 
 
 
-
-
-
 # Class definition
 class Pet:
     # Class variable
@@ -117,6 +114,13 @@ def main():
 
     print("\n\n\n")
     pet_owner3.print_info()
+
+    # use the check_property using hasattr()
+    def check_property():
+        print(hasattr(pet_owner1, "owner_first_name"))
+        print(hasattr(pet_owner2, "owner_first_name"))
+        print(hasattr(pet_owner3, "owner_first_name"))
+
 
 # Calling the main function
 main()
