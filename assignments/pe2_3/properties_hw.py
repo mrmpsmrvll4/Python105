@@ -1,3 +1,34 @@
+"""
+
+
+Assignment Details
+------------------
+1. Define a Pet Class:
+    Create private properties: owner_first_name, owner_last_name, pet_id, pet_name, and pet_type.
+    Set a default value for pet_type as "Dog".
+    Implement getter and setter methods for all properties.
+    Include a class variable vet_name set to the name of your veterinary office.
+    Add a method display_pet_info to print all details of the pet and owner.
+
+2. Create Pet Objects:
+    Instantiate at least three pet objects with different details.
+    Show the use of setter methods for at least one pet object.
+
+3. Implement Property Existence Check:
+    Write a function check_property that uses hasattr() to verify if a property exists in a pet object.
+
+4. Display Information:
+    Use display_pet_info to print details for each pet.
+    Show examples of check_property being used on various properties and pets.
+
+
+"""
+
+
+
+
+
+
 # Class definition
 class Pet:
     # Class variable

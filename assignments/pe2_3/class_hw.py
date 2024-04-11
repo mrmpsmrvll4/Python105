@@ -1,5 +1,17 @@
 """
-    creating our first class
+
+Your task is to design and implement a class in a programming language. This class will represent a person and hold personal data.
+
+Assignment Steps:
+-----------------
+1. Class Creation: Design a class named Person that includes the following data: name, address, age, and phone number.
+
+2. Accessor and Mutator Methods: Write get and set methods for each piece of data. These methods allow you to access and change the data safely.
+
+3. Creating Instances: Write a program that creates three instances (objects) of the Person class. Use one instance for your made-up information and the other two for imaginary friends or family members.
+
+4. Display Data: Print out the information stored in each instance. Ensure the output is formatted and easy to read.
+
 """
 
 # Class definition for a Student
@@ -51,19 +63,21 @@ class Person:
         self.__phone_number = phone_number
 
 
-
+# Set instances (objects) for class
 
 def main():
     person1 = Person("Max", "1234 Street", "27", "867-5309")
     person2 = Person("Jax", "5678 Avenue", "28", "123-4567")
     person3 = Person("Dax", "9999 Boulevard", "29", "987-6543")
 
+    # Show the info for each instance
     print("\n\n\n\n")
     print(person1.get_info())
     print(person2.get_info())
     print(person3.get_info())
     print("\n\n\n\n")
 
+    # Show use of setter method as example
     person3.set_name("Quacks")
     person3.set_address("7777 Duck Lane")
     person3.set_age("7")
