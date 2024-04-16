@@ -23,18 +23,13 @@ Task Description:
     - getattr(): Use it to access an attribute of a Pet instance.
     - isinstance(): Check if an instance is of the Pet class.
 
-4. Submission Requirements:
-    - Submit the Python script containing the Pet class definition and instances by uploading it to your GitHub repository and submitting the link
-    - Include comments to demonstrate the usage of the chosen special method or function.
-    - Ensure code follows Python best practices for readability and efficiency.
-
 """
 
 # Class definition
 
 class Pet:
 
-    def __init__(self, kind, breed, name):
+    def __init__(self, kind, breed, name="Sparky"):
         # Instance variables
         self.__kind = kind
         self.__breed = breed
@@ -55,13 +50,13 @@ class Pet:
     
     # Setup setters
 
-    def set_name(self):
+    def set_name(self, value):
         self.__kind = value
     
-    def set_name(self):
+    def set_name(self, value):
         self.__breed = value
 
-    def set_name(self):
+    def set_name(self, value):
         self.__name = value
 
 
@@ -77,3 +72,34 @@ class Pet:
         print(self.__kind)
         print(self.__breed)
         print(self.__name)
+
+# applying the class to a main function
+
+def main():
+
+    # making objects
+    pet1 = Pet("Dog", "Lab", "Barky")
+    pet2 = Pet("Cat", "Calico", "Keykey")
+    pet3 = Pet("Duck" "Mallard", "Quack")
+
+    # print pet1 details
+    print("\n\n\n")
+    pet1.print_details()
+    pet1.print_info()
+
+    # print pet2 details
+    print("\n\n\n")
+    pet2.print_details()
+    pet2.print_info()
+
+    # print pet3 details
+    print("\n\n\n")
+    pet3.print_details()
+    pet3.print_info()
+
+    # demonstrating the name method
+    print("\n\n")
+    print(pet1.__class__.__name__)
+
+# calling main 
+main()
