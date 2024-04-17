@@ -46,6 +46,37 @@ if __name__ == "__main__":
     main()
     
 
+    -- isnumeric() --
+
 """
 
 
+class NotNumericError(Exception):
+    def __init__(self, message="You silly duck you need to put a number."):
+        self.message = message
+        super().__init__(self.message)
+
+    def __str__(self):
+        return f'{self.message}'
+
+
+def main():
+    try:
+        # goal - create a custom error for if you get a float when you want an int
+        value = int(input("Enter a number: "))
+        if value > 9:
+            raise NotNumericError()
+
+    except NotNumericError as e:
+        print(f"error: {e}")
+    except Exception as e:
+        print(f"The exception is: {e}")
+        print("Please enter an integer")
+        main()
+    else:
+        print(f"Correct, you entered {value}.")
+    finally:
+        print("Yeehaw! Congrats cowboy.")
+
+
+main()
