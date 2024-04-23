@@ -57,7 +57,7 @@ def main():
     emojis = ['🐥', '🐣', '🦆', '🐤', '🪿'] 
 
     #makes for better readability when finally printed        
-    print("2 letter combinations:  ")
+    print("2 duck combos:  ")
 
     #loop uses the generator with the characters above
     for combo in two_letter_combinations(emojis):
