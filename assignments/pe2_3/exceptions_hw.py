@@ -12,14 +12,15 @@ Your program should prompt the user to enter a number and raise the InvalidInput
 
 Requirements
 -----------
-Implement a custom exception class InvalidInputError.
-Write a Python script that prompts the user to input a number.
-Use a try-except-else-finally block:
-The try block should contain the logic to check if the input is a number.
-The except block should catch the InvalidInputError and print an error message.
-The else block should print a confirmation message if the input is valid.
-The finally block should print a message indicating the end of the program's execution.
-Ensure the program gracefully handles the exception and continues to prompt the user until a valid number is entered.
+1. Implement a custom exception class InvalidInputError.
+2. Write a Python script that prompts the user to input a number.
+3. Use a try-except-else-finally block:
+    - The try block should contain the logic to check if the input is a number.
+    - The except block should catch the InvalidInputError and print an error message.
+    - The else block should print a confirmation message if the input is valid.
+    - The finally block should print a message indicating the end of the program's execution.
+    
+4. Ensure the program gracefully handles the exception and continues to prompt the user until a valid number is entered.
  
 
 Deliverable
@@ -28,6 +29,7 @@ Submit a Python script (.py file) that implements the custom exception and demon
 
 Example Code Structure
 ----------------------
+
 class InvalidInputError(Exception):
     # Custom exception implementation
 
@@ -42,42 +44,58 @@ def main():
         finally:
             # Indicate end of this iteration
 
-if __name__ == "__main__":
-    main()
     
-
-    -- isnumeric() --
-
 """
 
 # create a notnumericerror inherited from the exception class
 class NotNumericError(Exception):
-    
-    def __init__(self, message="You silly duck you need to put a number."):
+
+    # initialize error with default message
+    def __init__(self, message="You need to put a number."):
+        
+        # store the message as an attribute of an error
         self.message = message
         super().__init__(self.message)
 
+    # return the error message when said error is raised
     def __str__(self):
         return f'{self.message}'
 
 
 def main():
-    try:
-        # goal - create a custom error for if you get a float when you want an int
-        value = int(input("Enter a number: "))
-        if value > 9:
-            raise NotNumericError()
 
-    except NotNumericError as e:
-        print(f"error: {e}")
-    except Exception as e:
-        print(f"The exception is: {e}")
-        print("Please enter an integer")
-        main()
-    else:
-        print(f"Correct, you entered {value}.")
-    finally:
-        print("Yeehaw! Congrats cowboy.")
+    # make while loop to ask for input until the input is right
+    while True:
+
+        try:
+            # ask for a number
+            value = int(input("Enter a number: "))
+            # 
+            if value > 9:
+                #
+                raise NotNumericError()
+            
+
+        except NotNumericError as e:
+            # handle custom error with printing the custom error
+            print(f"error: {e}")
+
+
+        except Exception as e:
+            # handle if it is a different error 
+            print(f"The exception is: {e}")
+            print("Please enter an integer")
+            main()
+
+
+        else:
+            # if no exceptions happen then print the value
+            print(f"Correct, you entered {value}.")
+
+
+        finally:
+            # message showing it is all done now
+            print("Yee to the haw that's the end of the road pawrtner.")
 
 
 main()

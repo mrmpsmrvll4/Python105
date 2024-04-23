@@ -43,12 +43,15 @@ def main():
 
     except InvalidInputError as e:
         print(f"error: {e}")
+
     except Exception as e:
         print(f"The exception is: {e}")
         print("Please enter an integer")
         main()
+
     else:
         print(f"Thank you, you entered {value}.")
+        
     finally:
         print("Finally!!!")
 

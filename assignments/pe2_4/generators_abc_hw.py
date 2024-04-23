@@ -36,3 +36,33 @@ def main():
 main()
 
 """
+
+# create generator to use in the main function
+def two_letter_combinations(characters):
+
+    # goes through each character
+    for symbol1 in characters:
+
+        # goes through each character again
+        for symbol2 in characters:
+
+            #creates combo of 2 characters
+            yield symbol1 + symbol2
+
+
+# make use of the generator above and put it all together
+def main():
+
+    # creating the characters
+    characters = ['🐥', '🐣', '🦆', '🐤', '🪿'] 
+
+    #makes for better readability when finally printed        
+    print("2 letter combinations:  ")
+
+    #loop uses the generator with the characters above
+    for combo in two_letter_combinations(characters):
+
+        #prints out all of the combos created
+        print(combo)
+
+main()

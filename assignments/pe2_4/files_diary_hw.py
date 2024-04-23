@@ -17,3 +17,41 @@ Detailed Directions
 6. Submission: Submit both your personal_diary.py file and the diary.txt file containing your entries. 
 
 """
+
+def open_file():
+    try:
+        # Open the file in read mode
+        directory = open('diary.txt', 'r')
+        # we can read and write (append)
+        content = directory.read()
+        print(content)
+        directory.close()  # Always close the file
+        return (content)
+    except FileNotFoundError:
+        print("File not found.")
+
+    except IOError:
+        print("We created this file for you, it did not exist or was empty.")
+
+    except Exception as e:
+        print("An error occurred:", e)
+
+
+def add_values(my_values):
+    date = input("What is the current date?:  ")
+    time = input("What is the current time?:  ")
+    entry = input("Please make an entry!:  ")
+    entry = date + ", " + time + ", " + entry + "\n"
+    record = open('diary.txt', 'a')
+    record.write(entry)
+    record.close()
+
+
+def main():
+    # Trying to open a file and handle exceptions
+    values = open_file()
+    print(f"The contents of the file are: {values}")
+    add_values(values)
+
+
+main()

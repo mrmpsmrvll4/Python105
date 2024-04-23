@@ -11,8 +11,10 @@ def main():
 
     except IndexError:
         print("Out of range!")
+
     except ZeroDivisionError:
         print("You are not allowed to divide by 0 😭")
+        
     except:
         print("that won't work! 👎")
 
