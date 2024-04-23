@@ -50,8 +50,9 @@ if __name__ == "__main__":
 
 """
 
-
+# create a notnumericerror inherited from the exception class
 class NotNumericError(Exception):
+    
     def __init__(self, message="You silly duck you need to put a number."):
         self.message = message
         super().__init__(self.message)
