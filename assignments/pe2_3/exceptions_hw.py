@@ -70,9 +70,9 @@ def main():
 
         try:
             # ask for a number
-            value = int(input("Enter a number: "))
+            value = input("Enter a number: ")
             # 
-            if value > 9:
+            if value.isnumeric() == False:
                 #
                 raise NotNumericError()
             

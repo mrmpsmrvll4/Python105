@@ -25,6 +25,8 @@ Average: 49,760.30
 
 def main():
     try:
+        # set variable for count
+        count = 0
 
         # variable for total sales
         total = 0
@@ -42,18 +44,33 @@ def main():
             line = accounts.readline()
 
              # Convert the line to a floating-point number and remove any trailing newline character
-            line = float(line.rstrip('\n'))
+            line = line.rstrip('\n')
+
 
             # print value of the current line to the total
             print(f"\nvalue: {line}")
 
+            # if there is a blank line then continue
+            if line != '':
+                
+                #convert back to float post strip
+                floatFline = float(line)
+
             # add value of the current line to the total
-            total += line
+            total += floatFline
+
+            # add 1 to the current count
+            count += 1
 
             # print the updated total with commas
             print(f"total: {total:,.2f}")
+
         # close the file
         accounts.close()
+
+        # create the average
+        average = total/count
+        print(f"the average is: {average:.2f}")
 
          # Print the last line read from the file (will be an empty string indicating end of file)
         print(line)
