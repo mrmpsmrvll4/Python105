@@ -38,29 +38,29 @@ main()
 """
 
 # create generator to use in the main function
-def two_letter_combinations(characters):
+def two_letter_combinations(emojis):
 
-    # goes through each character in a list
-    for symbol1 in characters:
+    # goes through each emoji in a list
+    for emoji1 in emojis:
 
-        # goes through each character again
-        for symbol2 in characters:
+        # goes through each emoji again
+        for emoji2 in emojis:
 
             # takes the 2 "for's" above and adds them together
-            yield symbol1 + symbol2
+            yield emoji1 + emoji2
 
 
 # make use of the generator above and put it all together
 def main():
 
     # creating the characters
-    characters = ['🐥', '🐣', '🦆', '🐤', '🪿'] 
+    emojis = ['🐥', '🐣', '🦆', '🐤', '🪿'] 
 
     #makes for better readability when finally printed        
     print("2 letter combinations:  ")
 
     #loop uses the generator with the characters above
-    for combo in two_letter_combinations(characters):
+    for combo in two_letter_combinations(emojis):
 
         #prints out all of the combos created
         print(combo)
