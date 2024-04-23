@@ -25,19 +25,40 @@ Average: 49,760.30
 
 def main():
     try:
+
+        # variable for total sales
         total = 0
-        # count
+
+        # open the sales file
         accounts = open("sales_totals.txt", 'r')
+        
+        #read the first line from the file
         line = accounts.readline()
+
+        # loop reading the lines until there aren't any more lines
         while line:
+
+            # read the next line from the file
             line = accounts.readline()
+
+             # Convert the line to a floating-point number and remove any trailing newline character
             line = float(line.rstrip('\n'))
+
+            # print value of the current line to the total
             print(f"\nvalue: {line}")
+
+            # add value of the current line to the total
             total += line
+
+            # print the updated total with commas
             print(f"total: {total:,.2f}")
+        # close the file
         accounts.close()
+
+         # Print the last line read from the file (will be an empty string indicating end of file)
         print(line)
 
+    # If an IOError occurs (e.g., file not found or cannot be read), handle the exception
     except IOError:
         print("An IOError has occurred.")
 
