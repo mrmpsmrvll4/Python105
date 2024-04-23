@@ -40,13 +40,13 @@ main()
 # create generator to use in the main function
 def two_letter_combinations(characters):
 
-    # goes through each character
+    # goes through each character in a list
     for symbol1 in characters:
 
         # goes through each character again
         for symbol2 in characters:
 
-            #creates combo of 2 characters
+            # takes the 2 "for's" above and adds them together
             yield symbol1 + symbol2
 
 

@@ -17,38 +17,62 @@ Detailed Directions
 6. Submission: Submit both your personal_diary.py file and the diary.txt file containing your entries. 
 
 """
-
+# open the file to start adding to it
 def open_file():
+
+    #set the try and except
     try:
+
         # Open the file in read mode
         directory = open('diary.txt', 'r')
+
         # we can read and write (append)
         content = directory.read()
+
+        # print out what content exists
         print(content)
-        directory.close()  # Always close the file
+
+        # close the file
+        directory.close()
+
         return (content)
+    
+    # create error if the file doesn't currently exist
     except FileNotFoundError:
         print("File not found.")
 
+    # 
     except IOError:
         print("We created this file for you, it did not exist or was empty.")
 
+    # create an error if some other error arises
     except Exception as e:
         print("An error occurred:", e)
 
 
+
+# add to the diary
 def add_values(my_values):
+    # set input for the date, time and the entry
     date = input("What is the current date?:  ")
     time = input("What is the current time?:  ")
     entry = input("Please make an entry!:  ")
+
+    #add the 3 inputs together together for readability
     entry = date + ", " + time + ", " + entry + "\n"
+
+
+    # open the diary
     record = open('diary.txt', 'a')
+
+    # write to the diary
     record.write(entry)
+
+    # make sure to close diary
     record.close()
 
-
+# def main to bring it all together
 def main():
-    # Trying to open a file and handle exceptions
     values = open_file()
     print(f"The contents of the file are: {values}")
     add_values(values)
