@@ -1,3 +1,29 @@
+"""
+
+String Methods Exercise
+
+Step 1: Download the Exercise File
+--------
+There is a Python file string_methods2.py Download string_methods2.pythat you need to download. 
+This file contains several TODO comments, each indicating a small task for you to complete.
+
+Step 2: Complete the Exercises
+-------
+Open string_methods2.py in your favorite Python editor. For each TODO comment in the file, 
+write the necessary Python code to complete the task. 
+These tasks are designed to give you hands-on experience with different string methods.
+
+Step 3: Test Your Code
+-------
+After writing your code for each task, run the file to test your solutions. 
+Make sure each part of the exercise works as expected. 
+f you encounter errors, try to debug and fix them.
+
+"""
+
+
+
+
 # use string methods
 
 
