@@ -40,9 +40,6 @@ def main():
         # loop reading the lines until there aren't any more lines
         while line:
 
-            # read the next line from the file
-            line = accounts.readline()
-
              # Convert the line to a floating-point number and remove any trailing newline character
             line = line.rstrip('\n')
 
@@ -61,6 +58,9 @@ def main():
 
             # add 1 to the current count
             count += 1
+
+            # read the next line from the file
+            line = accounts.readline()
 
             # print the updated total with commas
             print(f"total: {total:,.2f}")
