@@ -1,3 +1,13 @@
+'''
+
+xxxxx
+copy this to hw folder since its what we went over in class and comments just needed to be added
+xxxxxx
+
+'''
+
+
+
 # calculate a person's age in: Years, months, weeks, days
 
 # import the datetime module for times and dates
