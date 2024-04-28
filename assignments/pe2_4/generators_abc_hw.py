@@ -1,5 +1,8 @@
 """
 
+Assignment: Generating Word Combinations
+
+Objective: Use a generator function with the yield statement in Python to generate all possible two-letter combinations from a given set of characters.
 
 Background:
 -----------

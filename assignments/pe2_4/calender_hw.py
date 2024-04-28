@@ -1,5 +1,7 @@
 '''
 
+Programming Assignment: Create a Custom Calendar
+
 In this assignment, you will write a Python program that generates a custom calendar for a user's birth month in the current year. 
 This task will help you understand how to use Python's Calendar module, interact with users, and display data in a structured format.
 
@@ -33,7 +35,7 @@ Steps
 from datetime import datetime
 
 #
-from calender import calender
+from calendar import calendar
 
 
 def main():

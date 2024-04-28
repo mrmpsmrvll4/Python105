@@ -1,5 +1,7 @@
 '''
 
+Assignment: Processing Files
+
 1. Open the file sales_totals in read mode (Download: sales_totals.txt Download sales_totals.txt)
 2. Read in all the lines using a loop
 3. Strip the newline symbol and convert each line to a float

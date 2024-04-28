@@ -1,5 +1,7 @@
 """
 
+Programming Assignment: coding your first class
+
 Your task is to design and implement a class in a programming language. This class will represent a person and hold personal data.
 
 Assignment Steps:

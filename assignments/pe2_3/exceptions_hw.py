@@ -1,5 +1,7 @@
 """
 
+Assignment: Custom Exception Creation
+
 Objective
 --------
 Create a custom exception class to handle a specific error scenario in a Python program.

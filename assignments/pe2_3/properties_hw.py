@@ -1,5 +1,11 @@
 """
 
+Programming Assignment: Veterinary Office Pet System
+ 
+
+This assignment is designed to reinforce your understanding of Python classes, properties, 
+and the use of getter and setter methods, as well as class versus instance variables.
+
 
 Assignment Details
 ------------------

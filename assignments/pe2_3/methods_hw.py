@@ -1,5 +1,7 @@
 """
 
+Assignment: Pet Class Creation and Exploration Assignment
+
 Objective: Understand and implement a class with specific attributes and methods, and explore Python's special methods and functions.
 
 Task Description:

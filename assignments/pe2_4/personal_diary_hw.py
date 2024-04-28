@@ -1,5 +1,7 @@
 """
 
+Assignment: Personal Diary
+
 Objective: Create a Python program that functions as a personal diary. Users should be able to add entries with the date and time they provide, which are then saved to a file.
 ----------
 Detailed Directions
