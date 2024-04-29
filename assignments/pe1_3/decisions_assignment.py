@@ -1,3 +1,31 @@
+"""
+
+Assignment:
+-----------
+decisions using age limits
+ 
+
+Write a Python program that uses if else statements and:
+---------------------
+    - Ask the user for their age.
+    - Check to see if the user is old enough to drive.
+    - Check to see if the user can vote.
+    - Check to see if the user can legally buy alcohol.
+    - Check to see if the user is eligible for a senior discount (65).
+    - Print all the results on the screen.
+
+
+Sample Result:
+--------------
+How old are you? 52
+You are old enough to drive.
+You can vote.
+You can buy alcohol legally.
+You are not eligible for the senior discount.
+
+
+"""
+
 #What is your age and how does it affect you with laws?
 
 age = input("How old are you?")
