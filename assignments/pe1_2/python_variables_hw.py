@@ -1,3 +1,36 @@
+""""
+
+
+Assignment
+----------
+variables and converting
+
+
+ Create a Python program that converts kilograms to pounds. 
+ Use at least four different samples to convert. A sample of the math is provided below,
+   do not use the same example in your program. 
+
+   
+Kilograms to Pounds Conversion:
+-------------------------------
+To convert kilograms (kg) to pounds (lb), you can use the following formula:
+
+Pounds (lb) = Kilograms (kg) * 2.20462
+
+Let's calculate the conversion for 5 kilograms
+
+
+Pseudocode:
+-----------
+Kilograms (kg): 5 kg
+Conversion Factor: 2.20462
+
+Pounds (lb) = 5 kg * 2.20462 ≈ 11.0231 lb
+
+So, 5 kilograms is approximately equal to 11.0231 pounds.
+
+"""
+
 # Define variables for kilogram values
 kg_value_1 = 6
 kg_value_2 = 7
