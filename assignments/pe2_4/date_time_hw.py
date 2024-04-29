@@ -94,7 +94,7 @@ def main():
         delta = today - birthday
 
         # print out the math from above in a readable format
-        print(f'Difference is {delta.days} days')
+        print(f'It has been {delta.days} days since you were born.')
 
 
         # used to calculate how many years, months, and weeks someone's age is
@@ -106,21 +106,21 @@ def main():
 
        
         #print out the years, months, weeks, days separately from the above calculation
+        print(f'Which means you are {delta.days} days old')
+
         print(f'You are {delta_years} years old')
 
         print(f'You are {delta_months} months old')
 
-        print(f'You are {delta_weeks} weeks old')
-
-        print(f'You are {delta.days} days old')
+        print(f'and you are {delta_weeks} weeks old')
 
 
     # raise an error if the directions aren't followed
     except Exception as e:
-        print(f"ooooops!!!:  {e}") 
+        print(f"Uh oh spaghetti o's!!!:  {e}")
+        
+        # call main to run the code back and restart if exception is raised 
         main()
 
 
 main()
-
-# 30.14 days in a month
