@@ -17,23 +17,32 @@ def main_menu():
     # Check values 
     # return choice
     try:
+        
         print("\nMain Menu - Customer Directory")
         print("1. Create new entry")
         print("2. Read and display by name")
         print("3. Update a record")
         print("4. Delete a record")
         print("5. Quit")
+
         choice = int(input("Please enter the number of your selection: "))
+
         if choice < 0 or choice > 5:
             print("That is out of range, please try again.")
+
             main_menu()
+
         else:
             return choice
+        
     except ValueError:
         print("That is not a valid number. Please try again.")
+
         main_menu()
+
     except Exception as e:
         print(f"main_menu: {e}")
+
 
 def check():
     # read file to list
@@ -42,14 +51,19 @@ def check():
     try:
         file = open("customer_directory.txt", "r")
         customer = file.readlines()
+
         for line in customer:
             print(line) # This was for test purposes!
+
         file.close()
         return customer
+    
     except FileNotFoundError:
         print("That file does not exist. \n We will create a new file for you!")
+
         customer = []
         return customer
+    
     except Exception as e:
         print(f"Check: {e}")
     
@@ -58,9 +72,12 @@ def save(output):
     # save the file
     try:
         file = open("customer_list.txt", 'w')
+
         for line in output:
             file.write(line)
+
         file.close()
+
         print("File updated.")
         print("Save")
 
@@ -69,23 +86,34 @@ def save(output):
 
     main()
 
+
 def create():
     # create a new entry
     # call the save  function
     try:
+
         customer = check()
+
         print("\n Please enter the customer information: ")
+
         first_name = input("First name: ")
         last_name = input("Last Name: ")
         phone = input("Phone number: ")
         email = input("Email address: ")
+
         entry = {f"{first_name}, {last_name}, {phone}, {email}\n"}
+
         customer.append(entry)
+
         for line in customer:
             print(line)
+
     except Exception as e:
+
         print(f"Create: {e}")
+
     main()
+
 
 def read():
     # will call the search function
@@ -93,16 +121,19 @@ def read():
     print("read")
     main()
 
+
 def search():
     # called by - read, update, delete
     # returns - record, index
     print("Search")
+
 
 def update():
     # updates a record
     # uses search function
     print("Update")
     main()
+
 
 def delete():
     # calls search
