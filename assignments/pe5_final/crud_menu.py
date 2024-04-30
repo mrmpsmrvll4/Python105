@@ -54,9 +54,19 @@ def check():
         print(f"Check: {e}")
     
 
-def save():
+def save(output):
     # save the file
-    print("Save")
+    try:
+        file = open("customer_list.txt", 'w')
+        for line in output:
+            file.write(line)
+        file.close()
+        print("File updated.")
+        print("Save")
+
+    except Exception as e:
+        print(f"You should check: {e}")
+
     main()
 
 def create():
